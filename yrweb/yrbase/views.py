@@ -1,8 +1,3 @@
-# from django.shortcuts import render
-
-# Create your views here.
-
-# from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -19,3 +14,5 @@ def About(request):
 def Donate(request):
     """About"""
     return render(request, 'yrbase/donate.html', {'title': 'Donate | YR'})
+
+

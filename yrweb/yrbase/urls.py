@@ -3,6 +3,7 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    # path('<int:id>/', views.newsfunc, name='newsfunc'), # `yrbase/5/`, 5 is an input from `newsfunc` in views.py
+    path('home/', views.Home, name='home'),
+    path('about/', views.About, name='about'),
+    path('donate/', views.Donate, name='donate'),
 ]

@@ -6,6 +6,16 @@
 from django.shortcuts import render
 
 
-def index(request):
+def Home(request):
     """Index"""
-    return render(request, 'yrbase/index.html')
+    return render(request, 'yrbase/home.html', {'title': 'Home | YR'})
+
+
+def About(request):
+    """About"""
+    return render(request, 'yrbase/about.html', {'title': 'About | YR'})
+
+
+def Donate(request):
+    """About"""
+    return render(request, 'yrbase/donate.html', {'title': 'Donate | YR'})

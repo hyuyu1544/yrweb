@@ -14,6 +14,7 @@
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="/static/css/animate.min.css" rel="stylesheet">
     <link href="/static/css/lightbox.css" rel="stylesheet">
+    <!-- 這行決定底排火箭 -->
     <link href="/static/css/main.css" rel="stylesheet">
     <link href="/static/css/responsive.css" rel="stylesheet">
 
@@ -63,7 +64,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="" {% url "yrbase:home" %}"">
                         <h1><img src="/static/images/logo.png" alt="logo"></h1>
                     </a>
 
@@ -74,25 +75,17 @@
                         <li class="menu"><a href="{% url "yrbase:about" %}">About<i class="fa fa-angle-down"></i></a>
 
                         </li>
-                        <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <!-- <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="blog.html">分類一</a></li>
                                 <li><a href="blog.html">分類二</a></li>
                                 <li><a href="blog.html">分類三</a></li>
                             </ul>
-                        </li>
-                        <li class="menu"><a href="portfolio.html">SocketBus<i class="fa fa-angle-down"></i></a>
-                        </li>
+                        </li> -->
+                        <!-- <li class="menu"><a href="portfolio.html">SocketBus<i class="fa fa-angle-down"></i></a>
+                        </li> -->
                         <li><a href="{% url "yrbase:donate" %}">Donate</a></li>
                     </ul>
-                </div>
-                <div class="search">
-                    <form role="form">
-                        <i class="fa fa-search"></i>
-                        <div class="field-toggle">
-                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
